@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<style>
+
+
+		.logo-container {
+			flex: 1;
+		}
+
+		.logo {
+			max-width: 100%;
+			height: auto;
+		}
+
+		nav {
+			flex: 2;
+		}
+
+		ul.header1,
+		ul.header2 {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		ul.header1 li,
+		ul.header2 li {
+			margin-right: 20px;
+		}
+
+		.nav-icon {
+			display: none;
+			cursor: pointer;
+			font-size: 24px;
+		}
+
+		@media (max-width: 768px) {
+			ul.header1 {
+				display: none;
+			}
+
+			.nav-icon {
+				display: block;
+			}
+
+			ul.header2 {
+				display: none;
+			}
+		}
+
+		.jsloginClk {
+			background: #97144d;
+			font-size: 1rem;
+			border-radius: 4px;
+			padding: 0.5rem 2rem;
+			display: inline-block;
+			cursor: pointer;
+			text-transform: uppercase;
+		}
+	</style>
+
+	<title>Your Website</title>
+
+</head>
+
+<body>
+	<div class="header-container">
+		<div class="logo-container">
+			<img src="../Img/logo-white.png" alt="Logo" class="logo">
+		</div>
+		<nav>
+			<i class="fas fa-bars nav-icon"></i>
+			<ul class="header1">
+				<li><a href="#">Person</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">Priority</a></li>
+				<li><a href="#">Burgundy</a></li>
+				<li><a href="#">NRI</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Dil se Open</a></li>
+				<li class="language-dropdown">
+					<a href="#" class="language-toggle">English</a>
+					<ul class="language-menu">
+						<li><a href="#">Hindi</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fab fa-whatsapp"></i> </a></li>
+				<li><a href="#"><i class="fas fa-search"></i> </a></li>
+				<li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+				<li><a href="#"><i class="far fa-chart-bar"></i></a></li>
+			</ul>
+
+			<ul class="header2">
+				<li><a href="#">Explore Product</a></li>
+				<li><a href="#">Grab Deals</a></li>
+				<li><a href="#">Make Payments</a></li>
+				<li><a href="#">Bank Smart</a></li>
+				<li><a href="#">Apply Now</a></li>
+				<li><a href="#">Open Digital A/C</a></li>
+				<div class="jsloginClk" tabindex="0">Login</div>
+			</ul>
+</body>
+
+</html>
